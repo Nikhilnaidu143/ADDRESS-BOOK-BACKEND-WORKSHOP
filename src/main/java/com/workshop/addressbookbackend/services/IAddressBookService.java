@@ -3,6 +3,7 @@ package com.workshop.addressbookbackend.services;
 import java.util.List;
 
 import com.workshop.addressbookbackend.dto.AddressBookDTO;
+import com.workshop.addressbookbackend.exceptions.AddressBookException;
 import com.workshop.addressbookbackend.models.AddressBook;
 
 public interface IAddressBookService {
@@ -14,11 +15,11 @@ public interface IAddressBookService {
 
 	public List<AddressBook> getAllAddressBooksInList();
 
-	public AddressBook getAddressBookDataById(long id);
+	public AddressBook getAddressBookDataById(long id) throws AddressBookException;
 
 	public AddressBook createAddressBook(AddressBookDTO addressBookDTO);
 
-	public AddressBook updateAddressBookById(AddressBookDTO addressBookDTO, String id);
+	public AddressBook updateAddressBookById(AddressBookDTO addressBookDTO, String id) throws AddressBookException;
 
 	public String deleteAddressBookById(long id);
 }

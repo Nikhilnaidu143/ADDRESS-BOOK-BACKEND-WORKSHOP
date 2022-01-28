@@ -15,6 +15,9 @@ import com.workshop.addressbookbackend.dto.ResponseDTO;
 @ControllerAdvice
 public class AddressBookExceptionHandler {
 
+	/*** Constant exception message. ***/
+	private static final String MESSAGE = "Exception while procession REST request.";
+
 	/***
 	 * UC-4.2:- Provide User Friendly Error Response in case validation fails.
 	 ***/
@@ -30,7 +33,13 @@ public class AddressBookExceptionHandler {
 		List<String> errorMessage = errorList.stream().map(objectError -> objectError.getDefaultMessage())
 				.collect(Collectors.toList());
 
-		ResponseDTO responseDTO = new ResponseDTO("Exception while procession REST request.", errorMessage);
+		ResponseDTO responseDTO = new ResponseDTO(MESSAGE, errorMessage);
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST); // returning response entity.
+	}
+
+	@ExceptionHandler(AddressBookException.class)
+	public ResponseEntity<ResponseDTO> handleAddressBookIdNotFoundException(AddressBookException exception) {
+		ResponseDTO responseDTO = new ResponseDTO(MESSAGE, exception.getMessage());
+		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
 	}
 }

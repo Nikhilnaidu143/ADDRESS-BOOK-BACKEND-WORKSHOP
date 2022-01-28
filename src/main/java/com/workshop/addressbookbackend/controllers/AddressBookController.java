@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.workshop.addressbookbackend.dto.AddressBookDTO;
 import com.workshop.addressbookbackend.dto.ResponseDTO;
+import com.workshop.addressbookbackend.exceptions.AddressBookException;
 import com.workshop.addressbookbackend.models.AddressBook;
 import com.workshop.addressbookbackend.services.AddressBookService;
 
@@ -47,9 +48,13 @@ public class AddressBookController {
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
 	}
 
-	/*** get addressBook by using ID . ***/
+	/***
+	 * get addressBook by using ID .
+	 * 
+	 * @throws AddressBookException
+	 ***/
 	@GetMapping(value = "/get/{id}")
-	public ResponseEntity<ResponseDTO> getAddressBook(@PathVariable String id) {
+	public ResponseEntity<ResponseDTO> getAddressBook(@PathVariable String id) throws AddressBookException {
 		AddressBook addressBook = addressBookService.getAddressBookDataById(Long.parseLong(id));
 		ResponseDTO responseDTO = new ResponseDTO("Get By ID Request Successfull...!", addressBook);
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
@@ -63,10 +68,14 @@ public class AddressBookController {
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
 	}
 
-	/*** Updating already existing address book details ***/
+	/***
+	 * Updating already existing address book details
+	 * 
+	 * @throws AddressBookException
+	 ***/
 	@PutMapping("/update/{id}")
 	public ResponseEntity<ResponseDTO> updateAddressBook(@Valid @RequestBody AddressBookDTO addressBookDTO,
-			@PathVariable String id) {
+			@PathVariable String id) throws AddressBookException {
 		AddressBook addressBookData = addressBookService.updateAddressBookById(addressBookDTO, id);
 		ResponseDTO responseDTO = new ResponseDTO("Put Request Successfull...!", addressBookData);
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);

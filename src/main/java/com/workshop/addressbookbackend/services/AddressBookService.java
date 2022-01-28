@@ -7,9 +7,11 @@ import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.stereotype.Service;
 
 import com.workshop.addressbookbackend.dto.AddressBookDTO;
+import com.workshop.addressbookbackend.exceptions.AddressBookException;
 import com.workshop.addressbookbackend.models.AddressBook;
 
-@Service //Service annotation tells spring framework that this class is under service layer.
+@Service // Service annotation tells spring framework that this class is under service
+			// layer.
 public class AddressBookService implements IAddressBookService {
 
 	/**
@@ -25,7 +27,7 @@ public class AddressBookService implements IAddressBookService {
 	}
 
 	/*** Defining implemented methods from IAddressBookService interface. ***/
-	@Override  //to return simple hello message for checking.
+	@Override // to return simple hello message for checking.
 	public String sayHello() {
 		String helloMessage = "Hello Nikhil, Welcome to address book backend application..!";
 		return helloMessage;
@@ -38,11 +40,19 @@ public class AddressBookService implements IAddressBookService {
 		return allAddressBooks;
 	}
 
-	/*** Getting addressBook by ID. ***/
+	/***
+	 * Getting addressBook by ID.
+	 * 
+	 * @throws AddressBookException
+	 ***/
 	@Override
-	public AddressBook getAddressBookDataById(long id) {
+	public AddressBook getAddressBookDataById(long id) throws AddressBookException {
 		AddressBook addressBook = returnAddressBookById(id); // returning addressBook.
-		return addressBook;
+		if (addressBook == null) {
+			throw new AddressBookException("ID not found...!"); // throw custom exception.
+		} else {
+			return addressBook;
+		}
 	}
 
 	/*** Creating address book. ***/
@@ -53,17 +63,27 @@ public class AddressBookService implements IAddressBookService {
 		return addressBook;
 	}
 
-	/*** Updating address book by id. ***/
+	/***
+	 * Updating address book by id.
+	 * 
+	 * @throws AddressBookException
+	 ***/
 	@Override
-	public AddressBook updateAddressBookById(AddressBookDTO addressBookDTO, String id) {
-		AddressBook addressBookById = returnAddressBookById(Long.parseLong(id));
-		addressBookById.setFull_name(addressBookDTO.full_name);
-		addressBookById.setAddress(addressBookDTO.address);
-		addressBookById.setPhone_number(addressBookDTO.phone_number);
-		addressBookById.setCity(addressBookDTO.city);
-		addressBookById.setState(addressBookDTO.state);
-		addressBookById.setZip_code(addressBookDTO.zip_code);
-		return addressBookById;
+	public AddressBook updateAddressBookById(AddressBookDTO addressBookDTO, String id) throws AddressBookException {
+		AddressBook addressBook = returnAddressBookById(Long.parseLong(id));
+
+		if (addressBook == null) {
+			throw new AddressBookException("ID not found...!"); // throw custom exception.
+		} else {
+			addressBook.setFull_name(addressBookDTO.full_name);
+			addressBook.setAddress(addressBookDTO.address);
+			addressBook.setPhone_number(addressBookDTO.phone_number);
+			addressBook.setCity(addressBookDTO.city);
+			addressBook.setState(addressBookDTO.state);
+			addressBook.setZip_code(addressBookDTO.zip_code);
+
+			return addressBook; // returning updated addressbook.
+		}
 	}
 
 	/*** Delete address book by id. ***/
