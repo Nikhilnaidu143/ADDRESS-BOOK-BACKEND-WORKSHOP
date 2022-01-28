@@ -3,7 +3,7 @@ package com.workshop.addressbookbackend.dto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@AllArgsConstructor // Used to auto generate default constructor in the source time.
+@AllArgsConstructor // Used to auto generate parameterized constructor in the source time.
 public @Data class ResponseDTO {
 
 	/***

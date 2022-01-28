@@ -5,8 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import org.hibernate.annotations.GeneratorType;
-
 import com.workshop.addressbookbackend.dto.AddressBookDTO;
 
 import lombok.Getter;
@@ -29,6 +27,7 @@ public class AddressBook {
 	private String city;
 	private String state;
 	private int zip_code;
+	private String email;
 	
 	/** Parameterized constructor. **/
 	public AddressBook(AddressBookDTO addressBookDTO) {
@@ -38,6 +37,7 @@ public class AddressBook {
 		this.city = addressBookDTO.city;
 		this.state = addressBookDTO.state;
 		this.zip_code = addressBookDTO.zip_code;
+		this.email = addressBookDTO.email;
 	}
 	
 	/** Parameterized Constructor(Constructor overloading). **/
@@ -49,5 +49,6 @@ public class AddressBook {
 		this.city = addressBookDTO.city;
 		this.state = addressBookDTO.state;
 		this.zip_code = addressBookDTO.zip_code;
+		this.email = addressBookDTO.email;
 	}
 }

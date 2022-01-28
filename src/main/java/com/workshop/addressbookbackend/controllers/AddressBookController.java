@@ -20,7 +20,7 @@ import com.workshop.addressbookbackend.dto.AddressBookDTO;
 import com.workshop.addressbookbackend.dto.ResponseDTO;
 import com.workshop.addressbookbackend.exceptions.AddressBookException;
 import com.workshop.addressbookbackend.models.AddressBook;
-import com.workshop.addressbookbackend.services.AddressBookService;
+import com.workshop.addressbookbackend.services.IAddressBookService;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -30,7 +30,7 @@ import lombok.extern.slf4j.Slf4j;
 public class AddressBookController {
 
 	@Autowired // AutoWired annotation is used for automatic dependency injection.
-	private AddressBookService addressBookService;
+	private IAddressBookService addressBookService;
 
 	/*** Returning simple hello message for checking. ***/
 	@GetMapping(value = { "", "/", "home" })

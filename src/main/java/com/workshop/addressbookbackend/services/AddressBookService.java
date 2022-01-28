@@ -1,6 +1,5 @@
 package com.workshop.addressbookbackend.services;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -50,7 +49,7 @@ public class AddressBookService implements IAddressBookService {
 		}
 	}
 
-	/*** Custome query:- Find address book by city. ***/
+	/*** Custom query:- Find address book by city. ***/
 	@Override
 	public List<AddressBook> getAddressBooksByCity(String city) {
 		return addressBookRepository.findAddressBooksByCity(city);
