@@ -22,8 +22,11 @@ import com.workshop.addressbookbackend.exceptions.AddressBookException;
 import com.workshop.addressbookbackend.models.AddressBook;
 import com.workshop.addressbookbackend.services.AddressBookService;
 
+import lombok.extern.slf4j.Slf4j;
+
 @RestController
 @RequestMapping("/addressbook")
+@Slf4j
 public class AddressBookController {
 
 	@Autowired // AutoWired annotation is used for automatic dependency injection.
@@ -63,6 +66,8 @@ public class AddressBookController {
 	/*** Creating AddressBook by using POST request. ***/
 	@PostMapping(value = "/create")
 	public ResponseEntity<ResponseDTO> createAddressBook(@Valid @RequestBody AddressBookDTO addressBookDTO) {
+		log.info("Created Address Book :- " + addressBookDTO.toString()); // logging.
+
 		AddressBook addressBookData = addressBookService.createAddressBook(addressBookDTO);
 		ResponseDTO responseDTO = new ResponseDTO("Post Request Successfull...!", addressBookData);
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
@@ -76,6 +81,9 @@ public class AddressBookController {
 	@PutMapping("/update/{id}")
 	public ResponseEntity<ResponseDTO> updateAddressBook(@Valid @RequestBody AddressBookDTO addressBookDTO,
 			@PathVariable String id) throws AddressBookException {
+		
+		log.info("Updated Address Book :- " + addressBookDTO.toString()); // logging.
+
 		AddressBook addressBookData = addressBookService.updateAddressBookById(addressBookDTO, id);
 		ResponseDTO responseDTO = new ResponseDTO("Put Request Successfull...!", addressBookData);
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.OK);
