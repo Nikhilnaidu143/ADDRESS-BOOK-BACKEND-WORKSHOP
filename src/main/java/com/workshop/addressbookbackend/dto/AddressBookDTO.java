@@ -19,13 +19,18 @@ public @ToString class AddressBookDTO {
 	
 	@NotNull(message = "Address cannot be null..!")
 	@NotEmpty(message = "Address cannot be empty..!")
+	@Pattern(regexp = "^[\\w\\s-,]{2,}$" , message = "Address validation failed..!")
 	public String address;
-	
+
+	@NotNull(message = "Phone number cannot be null..!")
 	public long phone_number;
 	
+	@Pattern(regexp = "^[A-Za-z]{2,}$" , message = "City validation failed..!")
 	public String city;
-	
+
+	@Pattern(regexp = "^[A-Za-z]{2,}$" , message = "State validation failed..!")
 	public String state;
 	
+	@NotNull(message = "Zip code cannot be null..!")
 	public int zip_code;
 }
