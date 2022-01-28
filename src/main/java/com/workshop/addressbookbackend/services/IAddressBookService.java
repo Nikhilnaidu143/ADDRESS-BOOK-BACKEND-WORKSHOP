@@ -16,6 +16,8 @@ public interface IAddressBookService {
 	public List<AddressBook> getAllAddressBooksInList();
 
 	public AddressBook getAddressBookDataById(long id) throws AddressBookException;
+	
+	public List<AddressBook> getAddressBooksByCity(String city);
 
 	public AddressBook createAddressBook(AddressBookDTO addressBookDTO);
 

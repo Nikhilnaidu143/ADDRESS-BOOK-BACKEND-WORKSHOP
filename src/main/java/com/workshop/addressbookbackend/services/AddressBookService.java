@@ -50,6 +50,12 @@ public class AddressBookService implements IAddressBookService {
 		}
 	}
 
+	/*** Custome query:- Find address book by city. ***/
+	@Override
+	public List<AddressBook> getAddressBooksByCity(String city) {
+		return addressBookRepository.findAddressBooksByCity(city);
+	}
+	
 	/*** Creating address book. ***/
 	@Override
 	public AddressBook createAddressBook(AddressBookDTO addressBookDTO) {
