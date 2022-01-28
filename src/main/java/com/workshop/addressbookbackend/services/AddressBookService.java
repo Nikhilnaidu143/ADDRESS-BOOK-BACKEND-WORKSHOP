@@ -2,6 +2,7 @@ package com.workshop.addressbookbackend.services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -20,13 +21,6 @@ public class AddressBookService implements IAddressBookService {
 	@Autowired //used to achieve automatic dependency injection.
 	private AddressBookRepository addressBookRepository;
 	
-	private static List<AddressBook> addressBookList = new ArrayList<AddressBook>();
-
-	/** Returning address book for crud operations. **/
-	private static AddressBook returnAddressBookById(long id) {
-		return addressBookList.stream().filter(addressBook -> addressBook.getId() == id).findFirst().orElse(null);
-	}
-
 	/*** Defining implemented methods from IAddressBookService interface. ***/
 	@Override // to return simple hello message for checking.
 	public String sayHello() {
@@ -37,8 +31,7 @@ public class AddressBookService implements IAddressBookService {
 	/*** Get All address books in the list. ***/
 	@Override
 	public List<AddressBook> getAllAddressBooksInList() {
-		List<AddressBook> allAddressBooks = addressBookList;
-		return allAddressBooks;
+		return addressBookRepository.findAll();
 	}
 
 	/***
@@ -48,11 +41,12 @@ public class AddressBookService implements IAddressBookService {
 	 ***/
 	@Override
 	public AddressBook getAddressBookDataById(long id) throws AddressBookException {
-		AddressBook addressBook = returnAddressBookById(id); // returning addressBook.
-		if (addressBook == null) {
+		Optional<AddressBook> findAddressBook = addressBookRepository.findById(id);
+		if(!findAddressBook.isPresent()) {
 			throw new AddressBookException("ID not found...!"); // throw custom exception.
-		} else {
-			return addressBook;
+		}
+		else {
+			return findAddressBook.get();
 		}
 	}
 
@@ -61,7 +55,6 @@ public class AddressBookService implements IAddressBookService {
 	public AddressBook createAddressBook(AddressBookDTO addressBookDTO) {
 		AddressBook addressBook = new AddressBook(addressBookDTO);
 		log.info("Address Book data :- " + addressBook.toString());
-		addressBookList.add(addressBook);
 		return addressBookRepository.save(addressBook);  //added to the database.
 	}
 
@@ -72,27 +65,24 @@ public class AddressBookService implements IAddressBookService {
 	 ***/
 	@Override
 	public AddressBook updateAddressBookById(AddressBookDTO addressBookDTO, String id) throws AddressBookException {
-		AddressBook addressBook = returnAddressBookById(Long.parseLong(id));
-
-		if (addressBook == null) {
+		Optional<AddressBook> findAddressBook = addressBookRepository.findById(Long.parseLong(id));
+		if (!findAddressBook.isPresent()) {
 			throw new AddressBookException("ID not found...!"); // throw custom exception.
-		} else {
-			addressBook.setFull_name(addressBookDTO.full_name);
-			addressBook.setAddress(addressBookDTO.address);
-			addressBook.setPhone_number(addressBookDTO.phone_number);
-			addressBook.setCity(addressBookDTO.city);
-			addressBook.setState(addressBookDTO.state);
-			addressBook.setZip_code(addressBookDTO.zip_code);
-
-			return addressBook; // returning updated addressbook.
+		} 
+		else {
+			return addressBookRepository.save(new AddressBook(Long.parseLong(id) , addressBookDTO));
 		}
 	}
 
 	/*** Delete address book by id. ***/
 	@Override
 	public String deleteAddressBookById(long id) {
-		addressBookList.remove(returnAddressBookById(id));
-		String message = "Deleted id :- " + id;
-		return message;
+		Optional<AddressBook> addressBook = addressBookRepository.findById(id);
+		if (addressBook.isPresent()) {
+			addressBookRepository.deleteById(id);
+			return "Deleted AddressBook details successfully.";
+		} else {
+			return "AddressBook details not found in database.";
+		}
 	}
 }
