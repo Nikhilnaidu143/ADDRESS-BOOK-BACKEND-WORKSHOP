@@ -2,7 +2,7 @@ package com.workshop.addressbookbackend.dto;
 
 import lombok.AllArgsConstructor;
 
-@AllArgsConstructor // used lombok library to create parameterized constructor.
+@AllArgsConstructor // used Lombok library to create parameterized constructor.
 public class AddressBookDTO {
 
 	/*** UC-2.1 :- Introducing DTO and Model to AddressBook App. ***/
