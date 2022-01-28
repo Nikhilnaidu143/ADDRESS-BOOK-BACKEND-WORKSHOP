@@ -4,9 +4,11 @@ import com.workshop.addressbookbackend.dto.AddressBookDTO;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @NoArgsConstructor  //Used lombok library to create default constructor.
 @Getter //Used to generate getters.
+@Setter //Used to generate setters.
 public class AddressBook {
 	
 	/** Private variables. ***/
