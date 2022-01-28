@@ -10,3 +10,4 @@
 2022-01-28 08:26.28.262 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 2.104 seconds (JVM running for 52.694)
 2022-01-28 08:26.28.269 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
 2022-01-28 08:26.28.279 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:15] Address Book App Started...!
+2022-01-28 08:27.19.314 [INFO] [http-nio-8080-exec-2] [o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
