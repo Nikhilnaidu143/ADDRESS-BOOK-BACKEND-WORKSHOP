@@ -11,3 +11,128 @@
 2022-01-28 08:26.28.269 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
 2022-01-28 08:26.28.279 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:15] Address Book App Started...!
 2022-01-28 08:27.19.314 [INFO] [http-nio-8080-exec-2] [o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-28 08:55.14.470 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 13072 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 08:55.14.474 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:637] No active profile set, falling back to default profiles: default
+2022-01-28 08:55.15.188 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 08:55.15.191 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 08:55.15.208 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 08:55.15.277 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 08:55.15.277 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 793 ms
+2022-01-28 08:55.15.626 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 08:55.15.653 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 08:55.15.688 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 1.464 seconds (JVM running for 146.662)
+2022-01-28 08:55.15.695 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+2022-01-28 08:55.15.695 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:15] Address Book App Started...!
+2022-01-28 08:56.16.204 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 13072 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 08:56.16.223 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:637] No active profile set, falling back to default profiles: default
+2022-01-28 08:56.17.760 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 08:56.17.765 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 08:56.17.767 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 08:56.18.57 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 08:56.18.63 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1814 ms
+2022-01-28 08:56.20.35 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 08:56.20.73 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 08:56.20.94 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 4.116 seconds (JVM running for 211.069)
+2022-01-28 08:56.20.105 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+2022-01-28 08:56.20.111 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:16] Address Book App started in COMMON Environmet.
+2022-01-28 08:56.20.118 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:17] Address Book App user :- cfpu 
+2022-01-28 09:09.35.330 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 34120 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 09:09.35.334 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:641] The following profiles are active: dev
+2022-01-28 09:09.36.956 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 09:09.37.02 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 09:09.37.09 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 09:09.37.352 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 09:09.37.353 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1997 ms
+2022-01-28 09:09.37.583 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 09:09.37.600 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 09:09.37.612 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 2.792 seconds (JVM running for 231.56)
+2022-01-28 09:09.37.617 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+2022-01-28 09:09.37.620 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:16] Address Book App started in DEV Environmet.
+2022-01-28 09:09.37.622 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:17] Address Book App user :- cfpu 
+2022-01-28 09:13.17.584 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 41880 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 09:13.17.598 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:641] The following profiles are active: dev
+2022-01-28 09:13.19.748 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 09:13.19.755 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 09:13.19.759 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 09:13.19.882 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 09:13.19.886 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 2200 ms
+2022-01-28 09:13.20.197 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 09:13.20.224 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 09:13.20.234 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 3.519 seconds (JVM running for 127.715)
+2022-01-28 09:13.20.244 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+2022-01-28 09:13.20.253 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:16] Address Book App started in DEV Environmet.
+2022-01-28 09:13.20.256 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:17] Address Book App user :- cfpu 
+2022-01-28 09:13.37.828 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 41880 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 09:13.37.836 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:641] The following profiles are active: dev
+2022-01-28 09:13.39.616 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 09:13.39.622 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 09:13.39.624 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 09:13.39.703 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 09:13.39.706 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1822 ms
+2022-01-28 09:13.39.995 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 09:13.40.15 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 09:13.40.24 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 2.617 seconds (JVM running for 147.504)
+2022-01-28 09:13.40.30 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+2022-01-28 09:13.40.32 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:16] Address Book App started in DEV Environmet.
+2022-01-28 09:13.40.34 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:17] Address Book App user :- cfpu 
+2022-01-28 09:51.39.597 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 20020 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 09:51.39.599 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:641] The following profiles are active: prod
+2022-01-28 09:51.40.242 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 09:51.40.244 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 09:51.40.245 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 09:51.40.305 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 09:51.40.306 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 700 ms
+2022-01-28 09:51.40.552 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 09:51.40.612 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 09:51.40.623 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 1.131 seconds (JVM running for 45.965)
+2022-01-28 09:51.40.627 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+2022-01-28 09:51.40.628 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:16] Address Book App started in PROD Environmet.
+2022-01-28 09:52.02.360 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 20020 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 09:52.02.361 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:641] The following profiles are active: prod
+2022-01-28 09:52.02.820 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 09:52.02.821 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 09:52.02.822 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 09:52.02.871 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 09:52.02.872 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 504 ms
+2022-01-28 09:52.03.53 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 09:52.03.66 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 09:52.03.72 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 0.798 seconds (JVM running for 68.413)
+2022-01-28 09:52.03.74 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+2022-01-28 09:52.03.76 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:16] Address Book App started in PROD Environmet.
+2022-01-28 09:52.17.794 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 1508 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 09:52.17.797 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:641] The following profiles are active: prod
+2022-01-28 09:52.18.33 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-28 09:52.18.33 [INFO] [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-28 09:52.22.138 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 09:52.22.167 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 09:52.22.168 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 09:52.22.399 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 09:52.22.400 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 4365 ms
+2022-01-28 09:52.23.684 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 09:52.23.757 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 09:52.23.784 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 7.425 seconds (JVM running for 9.372)
+2022-01-28 09:52.23.790 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:16] Address Book App started in PROD Environmet.
+2022-01-28 09:52.55.325 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 1508 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 09:52.55.327 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:641] The following profiles are active: prod
+2022-01-28 09:52.56.431 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 09:52.56.436 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 09:52.56.437 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 09:52.56.506 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 09:52.56.507 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1169 ms
+2022-01-28 09:52.56.830 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 09:52.56.850 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 09:52.56.863 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 2.231 seconds (JVM running for 42.452)
+2022-01-28 09:52.56.868 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+2022-01-28 09:52.56.869 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:16] Address Book App started in PROD Environmet.
+2022-01-28 09:53.04.162 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:55] Starting AddressBookBackendApplication using Java 15.0.2 on DESKTOP-F8A42Q9 with PID 1508 (C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend\target\classes started by VICKY in C:\Users\VICKY\Desktop\CFPproblems\AddressBookBackend)
+2022-01-28 09:53.04.163 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:641] The following profiles are active: prod
+2022-01-28 09:53.05.286 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-01-28 09:53.05.289 [INFO] [restartedMain] [o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-01-28 09:53.05.290 [INFO] [restartedMain] [o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-01-28 09:53.05.348 [INFO] [restartedMain] [o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-01-28 09:53.05.349 [INFO] [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext:290] Root WebApplicationContext: initialization completed in 1160 ms
+2022-01-28 09:53.05.654 [INFO] [restartedMain] [o.s.b.d.a.OptionalLiveReloadServer:58] LiveReload server is running on port 35729
+2022-01-28 09:53.05.737 [INFO] [restartedMain] [o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-01-28 09:53.05.745 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:61] Started AddressBookBackendApplication in 2.03 seconds (JVM running for 51.334)
+2022-01-28 09:53.05.749 [INFO] [restartedMain] [o.s.b.d.a.ConditionEvaluationDeltaLoggingListener:63] Condition evaluation unchanged
+2022-01-28 09:53.05.751 [INFO] [restartedMain] [c.w.a.AddressBookBackendApplication:16] Address Book App started in PROD Environmet.
