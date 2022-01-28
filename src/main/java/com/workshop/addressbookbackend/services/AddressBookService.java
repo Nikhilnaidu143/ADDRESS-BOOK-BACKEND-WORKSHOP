@@ -2,24 +2,25 @@ package com.workshop.addressbookbackend.services;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.workshop.addressbookbackend.dto.AddressBookDTO;
 import com.workshop.addressbookbackend.exceptions.AddressBookException;
 import com.workshop.addressbookbackend.models.AddressBook;
+import com.workshop.addressbookbackend.repository.AddressBookRepository;
 
-@Service // Service annotation tells spring framework that this class is under service
-			// layer.
+import lombok.extern.slf4j.Slf4j;
+
+@Service // Service annotation tells spring framework that this class is under service layer.
+@Slf4j
 public class AddressBookService implements IAddressBookService {
 
-	/**
-	 * UC-2.3 :- Ability for the Services Layer to store the AddressBook Data.
-	 **/
+	@Autowired //used to achieve automatic dependency injection.
+	private AddressBookRepository addressBookRepository;
+	
 	private static List<AddressBook> addressBookList = new ArrayList<AddressBook>();
-
-	private static final AtomicLong COUNTER = new AtomicLong(); // to auto increment the id.
 
 	/** Returning address book for crud operations. **/
 	private static AddressBook returnAddressBookById(long id) {
@@ -58,9 +59,10 @@ public class AddressBookService implements IAddressBookService {
 	/*** Creating address book. ***/
 	@Override
 	public AddressBook createAddressBook(AddressBookDTO addressBookDTO) {
-		AddressBook addressBook = new AddressBook(COUNTER.incrementAndGet(), addressBookDTO);
+		AddressBook addressBook = new AddressBook(addressBookDTO);
+		log.info("Address Book data :- " + addressBook.toString());
 		addressBookList.add(addressBook);
-		return addressBook;
+		return addressBookRepository.save(addressBook);  //added to the database.
 	}
 
 	/***
